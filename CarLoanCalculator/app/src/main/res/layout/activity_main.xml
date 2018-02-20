@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.carloancalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/carcost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/car_cost"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:id="@+id/carcostedit"
+        />
+
+    <TextView
+    android:id="@+id/downpayment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/down_payment"
+    android:textSize="20dp"
+    android:layout_marginTop="60dp"
+    android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/downpaymentedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/carcostedit"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/APR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apr"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/apredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/APR"
+        android:layout_alignBottom="@+id/APR"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/monthlypayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculatebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/monthly_payment"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/calculationedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthlypayment"
+        android:ems="9"
+        android:layout_centerHorizontal="true"/>
+
+
+<RadioGroup
+    android:id="@+id/radiogroup1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/seekBar"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+
+    <RadioButton
+        android:id="@+id/loanbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:text="Loan"
+        android:textColor="@color/colorPrimary"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/leasebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loanbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Lease"
+        android:textColor="@color/colorAccent" />
+</RadioGroup>
+
+
+    <Button
+        android:id="@+id/calculatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/seekbarlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/monthlypayment"
+        android:layout_alignRight="@+id/monthlypayment"
+        android:layout_below="@+id/radiogroup1"
+        android:text="@string/loan_length"
+        android:textColor="@color/colorAccent"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp"
+        android:min="1"
+        android:max="61"/>
+
+
+</RelativeLayout>

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,14 +23,19 @@ public class MainActivity extends AppCompatActivity {
     private TextView outputView;
     private TextView Tipamount;
     private TextView amountOwed;
+
     private SeekBar seekBar2;
+
     private EditText input;
     private EditText splitamount;
     private EditText billInput;
     private EditText numdiners;
+
     private LinearLayout inputLayout;
     private LinearLayout layout2;
+
     private Button tipButton;
+
     private CheckBox split;
 
 
@@ -80,10 +86,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //public void calculation (View v) {
-     //  splitamount= findViewById(R.id.)
 
-    //}
+
 
     public void buttonPressed (View v) {
         int tippercent = seekBar2.getProgress();

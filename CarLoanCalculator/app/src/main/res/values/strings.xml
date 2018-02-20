@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CarLoan</string>
+    <string name="car_cost">Car Cost:</string>
+    <string name="down_payment">Down Payment:</string>
+    <string name="apr">APR:</string>
+    <string name="monthly_payment">Monthly Payment:</string>
+    <string name="loan_length">Length of Loan (months):</string>
+</resources>
